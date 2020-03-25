@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patagonia</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Source+Sans+Pro&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" type="image/png" href="images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <ul class="navigation-list">
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+                  
+            
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Patagonia</h1>
+            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcor.</p>
+            <picture>
+                <source media="(max-width: 450px)" srcset="images/iphone.svg"/>
+                <source media="(max-width: 800px)" srcset="images/ipad.svg"/>
+            <img src="images/horse.svg" alt="horse">
+            </picture>
+        </section>
+    </main>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += "responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+    
+</body>
+</html>
